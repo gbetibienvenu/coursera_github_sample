@@ -1,0 +1,102 @@
+body{
+    background-color: #EDEFEE;
+    font-family: 'Markazi text ,serif';
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+        }
+
+        h2{
+            
+       font-size: 2rem;
+        }
+        header > img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        nav ul {
+           list-style: none;
+           text-align: center;
+           background: black;
+           background-size: 10px;
+           margin-top: 10px;
+           margin-right: 10px;
+           padding-top: 15px;
+           padding-bottom: 15px;
+           border-radius: 10px; 
+        }
+     nav li{
+        display: inline-block;
+        margin-right: 15px;
+        margin-left: 15px;
+
+    
+     }
+     section{
+        display: flex;
+        background-color: bisque;
+          border-radius: 15px;
+          margin-top: 20px;
+          margin-bottom: 30px;
+     }
+     article{
+        flex: 1;
+        width: 100px;
+       
+     }
+     article > img{
+        width: 99%;
+
+        
+     }
+     footer{
+        display: flex;
+     }
+
+
+     footer div{
+        flex: 1;
+     }
+
+
+     .pourcentage {
+        background:url(img/content9555.jpg);
+        color: #EDEFEE;
+        opacity: 0.9;
+        border-radius: 10px;
+        height: 250px;
+     }
+     .pourcentage h1{
+        padding-top: 45px;
+        padding-left: 30px;
+     }
+     .pourcentage p{
+        padding-top: 60px;
+        padding-left: 30px;
+        padding-right: 300px; 
+     }
+
+     main > img{
+       
+        background: gray;
+       
+     }
+     nav li a{
+        color: #EDEFEE;
+        font-size: 30px;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+     
+footer div > p {
+    margin-left: 410px;
+    margin-right: 10px;
+    margin-top: 10px;
+
+}
+footer div > hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
