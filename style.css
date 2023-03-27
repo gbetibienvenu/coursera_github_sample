@@ -1,102 +1,112 @@
 body{
     background-color: #EDEFEE;
     font-family: 'Markazi text ,serif';
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    margin-left: 5%;
-    margin-right: 5%;
-        }
-
-        h2{
-            
-       font-size: 2rem;
-        }
-        header > img{
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        nav ul {
-           list-style: none;
-           text-align: center;
-           background: black;
-           background-size: 10px;
-           margin-top: 10px;
-           margin-right: 10px;
-           padding-top: 15px;
-           padding-bottom: 15px;
-           border-radius: 10px; 
-        }
-     nav li{
-        display: inline-block;
-        margin-right: 15px;
-        margin-left: 15px;
-
-    
-     }
-     section{
-        display: flex;
-        background-color: bisque;
-          border-radius: 15px;
-          margin-top: 20px;
-          margin-bottom: 30px;
-     }
-     article{
-        flex: 1;
-        width: 100px;
-       
-     }
-     article > img{
-        width: 99%;
-
-        
-     }
-     footer{
-        display: flex;
-     }
-
-
-     footer div{
-        flex: 1;
-     }
-
-
-     .pourcentage {
-        background:url(img/content9555.jpg);
-        color: #EDEFEE;
-        opacity: 0.9;
-        border-radius: 10px;
-        height: 250px;
-     }
-     .pourcentage h1{
-        padding-top: 45px;
-        padding-left: 30px;
-     }
-     .pourcentage p{
-        padding-top: 60px;
-        padding-left: 30px;
-        padding-right: 300px; 
-     }
-
-     main > img{
-       
-        background: gray;
-       
-     }
-     nav li a{
-        color: #EDEFEE;
-        font-size: 30px;
-        font-weight: bolder;
-        text-decoration: none;
-    }
-     
-footer div > p {
-    margin-left: 410px;
-    margin-right: 10px;
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+   list-style: none;
+}
+a{
+   text-decoration: none;
+}
+/* header image styling */
+div.hearder-image{
+   height: 100px;
+   width: 200px;
+   margin: 0 auto;
+   margin-top: 50px;
+   margin-bottom: 20px;
+}
+div.hearder-image img{
+   width: 100%;
+   height: 100%;
+   display: block;
+}
+/* ==== Navlinks === */
+nav.nav-links{
+   width: 90%;
+   margin: 0 auto;
+}
+nav.nav-links ul{
+   border-radius: 10px;
+   background: #000;
+   display: flex ;
+   padding: 10px 10px;
+   justify-content: center;
+   gap: 40px;
 
 }
-footer div > hr {
-    margin-top: 10px;
-    margin-bottom: 10px;
+nav.nav-links ul a{
+   color: white;
+   font-weight: bold;
+}
+/* === Aligining main to be the centralized */
+main{
+   margin: 0 auto;
+   width: 90%;
+
+}
+
+/* ====30% styling ===
+   border radius 
+   background image
+*/
+div.pourcentage{
+   padding: 0px 20px;
+   background-image: url('/fast-food.jpg');
+   color: white;
+   border-radius: 10px;
+}
+
+div.pourcentage p {
+   margin-top: 40px;
+}
+/* section with 3 columns display styling */
+section.cards-sction{
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   height: auto;
+}
+article.cards{
+   background: #fdbf98;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 10px;
+   margin-bottom: 20px;
+   padding: 0px 20px;
+
+}
+div.cards-image{
+   width: 100%;
+   height: 200px;
+}
+div.cards-image img{
+   width: 100%;
+   height: 100%;
+}
+
+/* responsive design */
+@media screen and (min-width: 768px) {
+   /* desktopview for the logo imgae */
+   div.hearder-image {
+         height: 130px;
+         width: 260px;
+   }
+   
+   /* header desing for the cards */
+   section.cards-sction{
+   flex-direction: row;
+   }
+   /* 30% off styling */
+   div.pourcentage{
+      font-size: 1.5rem;
+   }
+   div.pourcentage p {
+      width:80%;
+   }
 }
